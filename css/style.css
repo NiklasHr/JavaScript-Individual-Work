@@ -1,0 +1,178 @@
+html {
+    background-color: #b7dceb;
+}
+
+body {
+    margin: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    margin: 0em 20em;
+    font-family: 'Bree Serif', serif;
+}
+
+header {
+  display: flex;
+  margin: 0em;
+  background-color: #56b6df;
+}
+
+/* Content */
+h1 {
+  margin: auto 1em;
+  font-weight: bold;
+  font-size: 250%;
+}
+
+h2 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+img {
+  max-width: 200px;
+}
+
+.content {
+    justify-content: center;
+    margin: 1em 0em;
+    display: flex;
+    font-size: 1.1em;
+    overflow: auto;
+}
+
+.search {
+    display: block;
+    width: 25%;
+    margin: 1em;
+    padding: 1em;
+    width: 25%;
+}
+
+.result {
+    margin: 1em;
+    padding: 1em;
+    border-left: 2px black solid;
+    width: 25%;
+    overflow:hidden;
+}
+
+input {
+    border: 1px black solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+
+button {
+    background-color: #00a0e3;
+    color: white;
+    padding: 5px 10px;
+    margin: 0.5em 0;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.active {
+    background-color: rgb(38, 130, 187);
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: #56b6df;
+    width:100%;
+    height:5em;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+/* Responsiveness */
+
+@media (max-width:1508px) {
+    .header {
+        margin: 0em 5em;
+    }
+    .result {
+        margin: 1em 5em;
+    }
+    .search {
+        margin: 0em 5em;
+
+    }
+}
+
+@media (max-width:1230px) {
+    .header {
+        margin: 0em 1em;
+    }
+    .result {
+        margin: 1em 1em;
+        width: 25%;
+    }
+    .search {
+        margin: 0em 1em;
+        width: 50%;
+    }
+}
+
+@media (max-width:876px) {
+    h1 {
+        font-size: 230%;
+    }
+    img {
+        max-width: 150px;
+    }
+    .content {
+        display: block;
+    }
+    .result {
+        width: auto;
+        border:none;
+        border-top: 2px black solid;
+    }
+    .search {
+        margin: 1em;
+        width: auto;
+    }
+}
+
+@media (max-width:620px) {
+    h1 {
+        visibility: hidden;
+        font-size: 0px;
+    }
+    img {
+        height: 65px;
+    }
+}
+
+@media (max-width:436px) {
+    .result {
+        margin: 1em 0.5em;
+        padding: 0;
+        padding-top: 1em;
+    }
+    .search {
+        margin: 0 0.5em;
+        padding: 0;
+    }
+}

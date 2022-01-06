@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Luxurious+Roman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Get Current Weather</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <img src="./images/sun2.png">
+            <h1>Get Current Weather!</h1>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="search">
+            <label>City:</label>
+            <div class="input">
+                <input id="city" type="text"><button id="search">Search</button>
+            </div>
+            <label>Units:</label>
+            <div class="buttons">
+                <button class="active" id="metric">Metric</button>
+                <button id="imperial">Imperial</button>
+            </div>
+        </div>
+
+        <div class="result">
+            <h2>City: <span id="cityResult"></span></h2>
+            <h3>Country: <span id="countryResult"></span></h3>
+            <p>Weather: <span id="weatherResult"></span></p>
+            <p>Temperature: <span id="temperatureResult"></span></p>
+            <p>Wind: <span id="windResult"></span></p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>©Niklas Härö</h3>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
