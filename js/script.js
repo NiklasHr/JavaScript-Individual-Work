@@ -23,7 +23,7 @@ function imperialUnit(){
 //Function that uses API.
 function getWeather(){
 //Adding the user input "city" into the URL.
-        let city = "http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&units=" + units + "&mode=XML&APPID=ff64c247a136f706923d1ee0d55d71e2"
+        let city = "http://api.openweathermap.org/data/2.5/weather?q=" + document.getElementById("city").value + "&units=" + units + "&mode=XML&APPID=f84bf4c48d629a20e8fac022da5e681c"
 
         //Making the xmlhttp request and using the variable "city" as URL.
         let xmlhttp = new XMLHttpRequest();
